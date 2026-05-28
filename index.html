@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chriki — Algeria's Everything App</title>
-  <meta name="description" content="Chriki is Algeria's everything app: Arabic-first assistance, transport routes, auto-filled documents, and local discovery." />
+  <title>Chriki — Algeria's Everything App | Your Guide for Algeria</title>
+  <meta name="description" content="Chriki is Algeria's everything app: Arabic-first assistance, app for public transportation, auto-filled documents, and local discovery. Your guide for Algeria." />
+  <meta name="keywords" content="Algeria, guide for Algeria, Chriki, app for public transportation, transport, routes, documents, tourism, Tariqi, Awraqi, Rahali" />
+  <meta property="og:title" content="Chriki — Algeria's Everything App | Your Guide for Algeria" />
+  <meta property="og:description" content="Chriki is Algeria's everything app: Arabic-first assistance, app for public transportation, auto-filled documents, and local discovery. Your guide for Algeria." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -795,7 +798,7 @@
       color: var(--muted); font-size: 14px;
     }
     footer .logo { font-size: 34px; }
-    .footer-links { display: flex; align-items: center; gap: 22px; }
+    .footer-links { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
 
     .reveal { opacity: 0; transform: translateY(32px); transition: opacity 700ms ease, transform 700ms ease; }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
@@ -988,7 +991,10 @@
               <div class="feature-icon">AI</div>
               <div>
                 <span class="ar-name arabic" lang="ar" data-i18n="feature_ai_ar">شريكي الذكي</span>
-                <h3 data-i18n="feature_ai_title">Chriki AI</h3>
+                <h3 style="display: flex; align-items: center; gap: 8px;">
+                  <span data-i18n="feature_ai_title">Chriki AI</span>
+                  <span class="badge-soon" data-i18n="coming_soon" style="background: rgba(216, 90, 48, 0.1); color: var(--coral); font-size: 11px; padding: 4px 8px; border-radius: 999px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;">Coming soon</span>
+                </h3>
                 <p data-i18n="feature_ai_desc">Arabic-first AI assistant for daily tasks, laws, studying, and government processes.</p>
               </div>
             </article>
@@ -997,7 +1003,7 @@
               <div>
                 <span class="ar-name arabic" lang="ar" data-i18n="feature_tariqi_ar">طريقي</span>
                 <h3 data-i18n="feature_tariqi_title">Tariqi</h3>
-                <p data-i18n="feature_tariqi_desc">Public transport navigation for buses, trains, and tramways across Algeria.</p>
+                <p data-i18n="feature_tariqi_desc">The ultimate app for public transportation: navigate buses, trains, and tramways across Algeria.</p>
               </div>
             </article>
             <article class="feature-card reveal">
@@ -1013,7 +1019,7 @@
               <div>
                 <span class="ar-name arabic" lang="ar" data-i18n="feature_rahali_ar">رحالي</span>
                 <h3 data-i18n="feature_rahali_title">Rahali</h3>
-                <p data-i18n="feature_rahali_desc">Tourism and activities guide for discovering places, plans, and weekends across Algeria.</p>
+                <p data-i18n="feature_rahali_desc">Your guide for Algeria: Tourism and activities guide for discovering related things, places, plans, and weekends across Algeria.</p>
               </div>
             </article>
           </div>
@@ -1073,7 +1079,7 @@
 
           <div class="mode-showcase reveal">
             <div class="showcase-text">
-              <h3 data-i18n="tariqi_showcase_title">From Algiers to Annaba, we've got your route.</h3>
+              <h3 data-i18n="tariqi_showcase_title">The ultimate app for public transportation. From Algiers to Annaba, we've got your route.</h3>
               <p class="arabic" lang="ar" data-i18n="tariqi_showcase_ar">من الجزائر العاصمة إلى عنابة، نوصلك لوجهتك</p>
               <ul class="feature-list">
                 <li data-i18n="tariqi_list_1">🚌 Bus routes across 48 wilayas</li>
@@ -1116,7 +1122,7 @@
               <span class="eyebrow yellow">Rahali · رحالي</span>
               <h2 class="mode-title">Algeria, this weekend.</h2>
               <span class="mode-arabic-title yellow arabic" lang="ar"></span>
-              <p class="mode-copy">Rahali turns the country into a quiet calendar of ideas — from a slow afternoon in the Casbah to a sunrise drive into the Sahara.</p>
+              <p class="mode-copy">Your guide for Algeria: Rahali turns the country into a quiet calendar of ideas — discover related things, from a slow afternoon in the Casbah to a sunrise drive into the Sahara.</p>
               <ul class="mode-bullets">
                 <li>
                   <span class="check yellow">✓</span>
@@ -1242,6 +1248,9 @@
     <footer>
       <a class="logo" href="#top" aria-label="Chriki home">شريكي</a>
       <div class="footer-links">
+        <a href="https://www.facebook.com/profile.php?id=61578801580933" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://web.telegram.org/k/#@chrikiapp" target="_blank" rel="noreferrer">Telegram</a>
+        <a href="mailto:chriki.inbox@gmail.com">chriki.inbox@gmail.com</a>
         <a href="https://instagram.com/chriki_app" target="_blank" rel="noreferrer">@chriki_app</a>
         <span data-i18n="footer_rights">© 2026 Chriki. All rights reserved.</span>
       </div>
@@ -1302,16 +1311,17 @@
           features_desc: "Built around the errands, questions, trips, and discoveries that shape daily life.",
           feature_ai_ar: "شريكي الذكي",
           feature_ai_title: "Chriki AI",
+          coming_soon: "Coming soon",
           feature_ai_desc: "Arabic-first AI assistant for daily tasks, laws, studying, and government processes.",
           feature_tariqi_ar: "طريقي",
           feature_tariqi_title: "Tariqi",
-          feature_tariqi_desc: "Public transport navigation for buses, trains, and tramways across Algeria.",
+          feature_tariqi_desc: "The ultimate app for public transportation: navigate buses, trains, and tramways across Algeria.",
           feature_awraqi_ar: "أوراقي",
           feature_awraqi_title: "Awraqi",
           feature_awraqi_desc: "Auto-fills government documents using your saved profile and sends them to print.",
           feature_rahali_ar: "رحالي",
           feature_rahali_title: "Rahali",
-          feature_rahali_desc: "Tourism and activities guide for discovering places, plans, and weekends across Algeria.",
+          feature_rahali_desc: "Your guide for Algeria: Tourism and activities guide for discovering related things, places, plans, and weekends across Algeria.",
           tariqi_ar: "طريقي",
           tariqi_title: "Tariqi — Your Way There",
           tariqi_feature1_title: "Route Finder",
@@ -1327,7 +1337,7 @@
           tariqi_feature4_item3: "🏫 University",
           tariqi_feature4_title: "Saved Routes",
           tariqi_feature4_desc: "Save your frequent destinations for instant route planning.",
-          tariqi_showcase_title: "From Algiers to Annaba, we've got your route.",
+          tariqi_showcase_title: "The ultimate app for public transportation. From Algiers to Annaba, we've got your route.",
           tariqi_showcase_ar: "من الجزائر العاصمة إلى عنابة، نوصلك لوجهتك",
           tariqi_list_1: "🚌 Bus routes across 48 wilayas",
           tariqi_list_2: "🚆 Train schedules and bookings",
@@ -1453,6 +1463,7 @@
           features_desc: "Pensée pour les courses, questions, déplacements et découvertes du quotidien.",
           feature_ai_ar: "شريكي الذكي",
           feature_ai_title: "Chriki AI",
+          coming_soon: "Bientôt",
           feature_ai_desc: "Assistant IA en arabe pour les tâches quotidiennes, lois, études et démarches.",
           feature_tariqi_ar: "طريقي",
           feature_tariqi_title: "Tariqi",
@@ -1604,6 +1615,7 @@
           features_desc: "مصمم للمهام اليومية، الأسئلة، التنقل، والاكتشاف.",
           feature_ai_ar: "شريكي الذكي",
           feature_ai_title: "شريكي الذكي",
+          coming_soon: "قريبًا",
           feature_ai_desc: "مساعد ذكي بالعربية للمهام، القوانين، الدراسة، والإجراءات.",
           feature_tariqi_ar: "طريقي",
           feature_tariqi_title: "طريقي",
