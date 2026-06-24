@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خطوط النقل في وهران بالتفصيل | شريكي Chriki</title>
+    <meta name="description" content="دليلك الشامل لجميع خطوط حافلات النقل الحضري والعمومي (إيتو) بمدينة وهران بالتفصيل ومساراتها." />
+    <link rel="icon" type="image/png" href="/assets/appicon.png" />
+    <link rel="stylesheet" crossorigin href="/assets/Logo-C3tK9BT0.css">
+    <script type="module" crossorigin src="/assets/Logo-B7m-sPvt.js"></script>
+    <style>
+      body {
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+      .line-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .line-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.1), 0 8px 10px -6px rgba(16, 185, 129, 0.1);
+      }
+      .search-box:focus {
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans antialiased text-slate-800">
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/85 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="/" class="cursor-pointer focus:outline-none flex items-center gap-2">
+          <!-- Back Arrow SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-emerald-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+          <span class="font-raqami font-extrabold text-2xl text-black">شريكي</span>
+        </a>
+        <a href="/#download" class="rounded-full bg-emerald-600 px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-emerald-600/25 transition hover:bg-emerald-700">
+          تحميل التطبيق
+        </a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-5 py-12">
+      <!-- Intro Section -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3.5 py-1.5 rounded-full">دليل النقل بوهران</span>
+        <h1 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl font-arabic">
+          كل خطوط النقل في وهران بالتفصيل
+        </h1>
+        <p class="mt-4 text-base text-slate-600 leading-relaxed font-arabic">
+          تسهيلاً لتنقلكم اليومي في الباهية وهران، إليكم الدليل الكامل والمنظم لخطوط الحافلات الحضرية، العمومية (إيتو ETO)، والخاصة لمساعدتك على تخطيط رحلتك بكل سهولة.
+        </p>
+
+        <!-- Dynamic Filter Input -->
+        <div class="mt-8 max-w-md mx-auto">
+          <div class="relative">
+            <input type="text" id="searchInput" placeholder="ابحث عن اسم حي، منطقة، أو رقم الخط..." class="w-full search-box px-5 py-3.5 pr-12 rounded-2xl border border-slate-200 bg-white text-sm text-slate-950 placeholder-slate-400 focus:outline-none focus:border-emerald-500 transition-all font-arabic text-right" />
+            <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-5 h-5 text-slate-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.603 10.602Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bus Lines Cards Grid -->
+      <div id="linesGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+        <!-- Cards will be generated or styled cleanly -->
+        
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="8 مدينة الجديدة محطة الباهية عدل 1300 الحاسي">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 8</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">مدينة الجديدة ← محطة الباهية ← عدل 1300 الحاسي</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="38 محطة الباهية حي رابح مسرغين">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 38</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">محطة الباهية ← حي رابح مسرغين</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="103 محطة الباهية كاسطور بير الجير جامعة بالقايد">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 103</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">محطة الباهية ← كاسطور ← بير الجير ← جامعة بالقايد</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="G52 المدينة الجديدة ريتاج مول الباهية إيسطو محطة الصباح">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط G52</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">المدينة الجديدة ← ريتاج مول ← الباهية ← إيسطو ← محطة الصباح</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="14 دار الحياة وسط المدينة سونالغاز مرسى الكبير">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 14</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">دار الحياة ← وسط المدينة سونالغاز ← مرسى الكبير</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="39 المدينة الجديدة الأمير عبد القادر st remy حي النجمة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 39</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">المدينة الجديدة ← الأمير عبد القادر (st remy) ← حي النجمة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="90 حي الصباح معروف قريطة بونيف حاسي عامر فلوريس بن فريحة بوفاطيس">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 90</span>
+              <span class="text-xs text-slate-400 font-medium">خط جديد</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي الصباح ← معروف قريطة ← بونيف ← حاسي عامر ← فلوريس ← بن فريحة ← بوفاطيس</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="S دار الحياة الحمري محطة الباهية حي جمال الدين كناستال جامعة بالقايد">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط S</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">دار الحياة ← الحمري ← محطة الباهية ← حي جمال الدين ← كناستال ← جامعة بالقايد</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="23 ETO ساحة اول نوفمبر PLACE D'ARME مدينة الجديدة دار الحياة الحمري حي الأمير عيد القادر محطة الباهية">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-2xl">إيتو ETO 23</span>
+              <span class="text-xs text-slate-400 font-medium">مؤسسة عمومية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">ساحة اول نوفمبر (PLACE D'ARME) ← مدينة الجديدة ← دار الحياة ← الحمري ← حي الأمير عبد القادر ← محطة الباهية</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="11 ساحة فاليروا ساحة قرقيطة شارع العربي بن مهيدي ثانوية العقيد لطفي قمبيطة HLM المرشد إيسطوا حي الصباح محطة حي الصباح">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 11</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">ساحة فاليروا ← ساحة قرقيطة ← شارع العربي بن مهيدي ← ثانوية العقيد لطفي ← قمبيطة ← HLM ← المرشد ← إيسطوا ← حي الصباح ← محطة حي الصباح</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="P ثانوية العقيد لطفي قمبيطة الصديقية الميريديان عقيد لطفي كناستال جامعة بالقايد">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط P</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">ثانوية العقيد لطفي ← قمبيطة ← الصديقية ← الميريديان ← عقيد لطفي ← كناستال ← جامعة بالقايد</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="102 دار الحياة الحمري حي البلاطوا الولاية قمبيطة HLM المرشد عيادة نقاش إيسطوا حي الصباح حي الياسمين حي النور">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 102</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">دار الحياة ← الحمري ← حي البلاطوا ← الولاية ← قمبيطة ← HLM ← المرشد ← عيادة نقاش ← إيسطوا ← حي الصباح ← حي الياسمين ← حي النور</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="53 ETO جامعة بالقايد طريق ميلينيوم بير الجير محور الدوران المشتلة المرشد HLM قمبيطة مديرية التعليم الولاية التلفزيون الجزائري صندوق الضمان الإجتماعي مدينة الجديدة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-2xl">إيتو ETO 53</span>
+              <span class="text-xs text-slate-400 font-medium">مؤسسة عمومية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">جامعة بالقايد ← طريق ميلينيوم ← بير الجير ← محور الدوران المشتلة ← المرشد ← HLM ← قمبيطة ← مديرية التعليم ← الولاية ← التلفزيون الجزائري ← صندوق الضمان الإجتماعي ← مدينة الجديدة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="إيتو رقم 2 دار الحياة الحمري بلاطو لاكزورا الخضراء كاسطور الباهية سيتي جمال مستشفى إسطو حي الصباح سيدي معروف القاريطة حاسي بونيف حاسي عامر حي محمد بوضياف">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-2xl">إيتو ETO 2</span>
+              <span class="text-xs text-slate-400 font-medium">مؤسسة عمومية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">دار الحياة ← الحمري ← بلاطو ← لاكزورا الخضراء ← كاسطور ← الباهية ← سيتي جمال ← مستشفى إسطو ← حي الصباح ← سيدي معروف ← القاريطة ← حاسي بونيف ← حاسي عامر ← حي محمد بوضياف (النهاية)</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="4G يغمراسن سالاناس بولونجي المدينة الجديدة البلاطوا الضمان الإجتماعي التلفزيون الجزائري الزرع كاسطور الدار البيضاء حي جمال الدين عيادة نقاش المرشد المشتلة إستوا مديرية المجاهدين">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 4G</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">يغمراسن ← سالاناس ← بولونجي ← المدينة الجديدة ← البلاطوا ← الضمان الإجتماعي ← التلفزيون الجزائري ← الزرع ← كاسطور ← الدار البيضاء ← حي جمال الدين ← عيادة نقاش ← المرشد ← المشتلة ← إستوا (مديرية المجاهدين)</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="101 نهج الألفية millénium الصديقية الشيراطون قمبيطة مرورا بطنجاوي ميرامار فاليروا">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 101</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">نهج الألفية (millénium) ← الصديقية ← الشيراطون ← قمبيطة مروراً بـ طنجاوي ← ميرامار ← فاليروا</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="إيتو 69 البرية حاسي البيوض حي النجمة شطيبو حي الأمير عبدالقادر saint remy البركي دار البيضة كاستور الإذاعة ليسي تيكنيك بلاتو الحمري">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-2xl">إيتو ETO 69</span>
+              <span class="text-xs text-slate-400 font-medium">مؤسسة عمومية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">البرية ← حاسي البيوض ← حي النجمة (شطيبو) ← حي الأمير عبد القادر (saint remy) ← البركي ← دار البيضة ← كاستور ← الإذاعة ← ثانوية تيكنيك (ليسي تيكنيك) ← بلاتو ← الحمري</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="43 حي الشهيد محمود بوجمعة بير الجير بيبنيار aadl جامعة ايستو الصباح الياسمين مستشفى اول نوفمبر ستي جمال الباهية الحمري مدينة جديدة 19 جوان بلاس روكس">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 43</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي الشهيد محمود (بوجمعة) ← بير الجير ← بيبنيار ← AADL ← جامعة إيستو ← الصباح ← الياسمين ← مستشفى 1 نوفمبر ← سيتي جمال ← الباهية ← الحمري ← مدينة جديدة ← 19 جوان (بلاس روكس) <span class="text-xs text-slate-400">(أحياناً يمر على رديس مكان بيبنيار)</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="42 حاسي بونيف حي شهيد محمود بوجمعة بئر الجير بيبنيار مرشد ليزا شلام تارمينست">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 42</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حاسي بونيف ← حي الشهيد محمود (بوجمعة) ← بئر الجير ← بيبنيار ← مرشد ← ليزا شلام (النهاية)</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="37 بولفار معطى ساتاتوان كمين طورو لي زاموندي الحاسي">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 37</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">شارع معطى (بولفار معطى) ← ساتاتوان ← كمين ← طورو ← لي زاموندي ← الصعود للحاسي</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="34 200 شونتي سينيا جياموا دوميل لينازم لنساب شرفوي مدينة الجديدة فاليرو">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 34</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">200 شونتي ← سينيا ← جياموا ← دوميل ← لينازم ← لنساب ← شرفاوي ← مدينة الجديدة ← فاليرو (النهاية)</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="2 حاسي بونيف محطة تانية لاميري معهد التكوين المهني قاريطة سيدي معروف حي الصباح مستشفي 1 نوفمبر حي جمال دين دار البيضاء كاستور الاذاعة لاكزورو الحمري لاجونص">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-slate-750 text-white text-sm font-black px-4 py-1.5 rounded-2xl bg-amber-500">الخط 2 (خاص)</span>
+              <span class="text-xs text-slate-400 font-medium">ناقل خاص</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حاسي بونيف ← بلدية سيدي معروف (لاميري) ← معهد التكوين المهني ← قاريطة ← سيدي معروف ← حي الصباح ← مستشفى 1 نوفمبر ← حي جمال الدين ← دار البيضاء ← كاستور ← الإذاعة ← لاكزورو ← الحمري ← وكالة الحمري سابقاً (لاجونص)</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="97 محطة القطار مدينة الجديدة place roux الحمري رتاج مول الأمير عبد القادر الباهية الكرمة السلام">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 97</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">محطة القطار ← مدينة الجديدة (place roux) ← الحمري ← رتاج مول ← الأمير عبد القادر ← الباهية ← الكرمة ← السلام</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="إيتو رئيسي 10 الحمري وسط المدينة سونلغاز المرسى عين الترك الأندلسيات">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-2xl">إيتو ETO 10</span>
+              <span class="text-xs text-slate-400 font-medium">مؤسسة عمومية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي الحمري ← وسط المدينة (سونلغاز) ← المرسى ← عين الترك ← الأندلسيات</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="50 52 حياة ريجنسي سكنات البي بي المدينة الجديدة ثانوية لطفي">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 50 و 52</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حياة ريجنسي (سكنات البي بي) ← حي المدينة الجديدة ← ثانوية لطفي</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="53 حي 4400 مسكن ببلقايد حي 2000 مسكن الملعب الجديد ميليريوم بئر الجير مفترق المشتلة المرشد اشلام بلقايد قمبيطة مقر الولاية الإذاعة محطة النقل القديمة بالحمري">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 53</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي 4400 مسكن ببلقايد ← حي 2000 مسكن ← الملعب الجديد ← ميلينيوم ← بئر الجير ← مفترق المشتلة ← المرشد ← اشلام ← قمبيطة ← مقر الولاية ← الإذاعة ← محطة النقل القديمة بالحمري</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="54 حي 2000 مسكن ببلقايد دوار الفلاليس مسار خط P1 ثانوية لطفي الإذاعة محطة النقل القديمة بالحمري">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 54</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي 2000 مسكن ببلقايد ← دوار الفلاليس ← مسار خط P1 ← ثانوية لطفي مروراً بالإذاعة ومحطة النقل القديمة بالحمري</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="16 عين البيضاء محطة القطار ببلاطو شوبو">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 16</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">عين البيضاء ← محطة القطار ببلاطو مروراً بـ شوبو</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="A حي اللوز قمبيطة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط A</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي اللوز ← قمبيطة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="G1 حي 4400 مسكن ببلقايد الملعب الجديد سكنات حسناوي حي الصباح محطة الباهية">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط G1</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي 4400 مسكن ببلقايد ← الملعب الجديد ← سكنات حسناوي ← حي الصباح ← محطة الباهية</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="G2 ثانوية لطفي محطة الباهية طريق الميناء مقر دائرة وهران">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط G2</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">ثانوية لطفي ← محطة الباهية مروراً بطريق الميناء ومقر دائرة وهران</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="G3 محطة الباهية المدينة الجديدة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط G3</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">محطة الباهية ← المدينة الجديدة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="69 البرية البيوض الكرمة كاسطور المؤسسة العمومية للتلفزيون الحمري شاقوري">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 69</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">البرية ← البيوض ← الكرمة ← كاسطور ← المؤسسة العمومية للتلفزيون ← الحمري شاقوري</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="K3 قصر الرياضات سانت ايبار السانية دوار حي الامل الكرمة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط K3</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">قصر الرياضات سانت ايبار ← السانية ← دوار حي الامل ← الكرمة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="79 تليلات الكرمة سيتى أمال البركي الباهية الأمير ريتاج ملعب 19 جوان الحمري مديوني المدينة الجديدة مستشفى بلاطو محطة القطار">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-amber-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 79 (خاص)</span>
+              <span class="text-xs text-slate-400 font-medium">ناقل خاص</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">واد تليلات ← الكرمة ← سيتى أمال ← البركي ← الباهية ← الأمير ← ريتاج ← ملعب 19 جوان ← الحمري ← مديوني ← المدينة الجديدة ← مستشفى بلاطو ← محطة القطار <span class="text-xs text-slate-400">(وقد تم إطلاق خط جديد بتليلات بين وسط المنطقة والقطب العمراني الجديد 3100 مسكن)</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="H الروشي ليزاموندي مارافال لانساب الامير الباهية حي جمال الدين مستشفى حي الصباح حي الياسمين سكنات عدل ميلينيوم العقيد باليدور كاناستال">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط H</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">الروشي ← ليزاموندي ← مارافال ← لانساب ← الامير ← الباهية ← حي جمال الدين ← مستشفى ← حي الصباح ← حي الياسمين ← سكنات عدل ← ميلينيوم ← العقيد باليدور ← كاناستال</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="03 بلاطوا متحف أحمد زبانة القصبة الحمري الامير السانية شرق السانية وسط كارة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 03</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">بلاطوا ← متحف أحمد زبانة ← القصبة ← الحمري ← الامير ← السانية شرق ← السانية وسط ← كارة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="B حي اللوز بيتي لاقلاصيار مارافال لوريروز شرفاوي مديوني ملعب أحمد زبانة حديقة التسلية تيريقو باستي كاسطور دار البيضاء صوداريش تربيعة شالام الصديقية">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط B</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">حي اللوز ← بيتي ← لاقلاصيار ← مارافال ← لوريروز ← شرفاوي ← مديوني ← ملعب أحمد زبانة  ← حديقة التسلية ← تيريقو ← باستي ← كاسطور ← دار البيضاء ← صوداريش ← تربيعة ← شالام ← الصديقية</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="U دار الحياة بولونجي شرفاوي سيبيا لينازم لانساب جيامو السانية شمال السانية وسط كارة الكيمو كلينيك كارة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-3 py-1.5 rounded-2xl">الخط U</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">دار الحياة ← بولونجي ← شرفاوي ← سيبيا ← لينازم ← لانساب ← جيامو ← السانية شمال ← السانية وسط ← كارة ← الكيمو ← كلينيك كارة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="17 بولفار معطى ساتاتوان كمين طورو لي زاموندي لاميري كوكا">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 17</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">شارع معطى (بولفار معطى) ← ساتاتوان ← كمين ← طورو ← لي زاموندي ← بلدية كوكا (لاميري) مروراً بالدوران والطلوع لكوكا</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="18 عدل عين بيضاء يغموراسن سيد الهواري">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 18</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">عدل عين البيضاء ← يغموراسن ← سيد الهواري</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="line-card bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between" data-search="28 عين البيضاء قصر الرياضة">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-emerald-500 text-white text-sm font-black px-4 py-1.5 rounded-2xl">الخط 28</span>
+              <span class="text-xs text-slate-400 font-medium">حافلة حضرية</span>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2.5">
+                <span class="text-xs text-slate-400 mt-1">المسار:</span>
+                <p class="text-sm font-bold text-slate-800 font-arabic leading-relaxed">عين البيضاء ← قصر الرياضة</p>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-slate-50 mt-5 pt-3 flex justify-between items-center text-xs text-emerald-600 font-semibold">
+            <span>متوفر في التطبيق</span>
+            <span>✓ active</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No Results State -->
+      <div id="noResults" class="hidden text-center py-20 bg-white rounded-3xl border border-slate-100 shadow-sm mt-8">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-slate-300 mx-auto mb-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+        </svg>
+        <h3 class="text-lg font-bold text-slate-800 font-arabic">لا توجد نتائج بحث تطابق مدخلاتك</h3>
+        <p class="text-slate-400 text-sm mt-2 font-arabic">جرب إدخال كلمات مفتاحية أخرى مثل "حاسي" أو رقم الخط مباشرة</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-100 bg-slate-50 mt-12">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row">
+        <a href="/" class="cursor-pointer focus:outline-none flex items-center">
+          <span class="font-raqami font-extrabold text-2xl text-black">شريكي</span>
+        </a>
+        <nav class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500 font-arabic">
+          <a href="/#features" class="hover:text-emerald-700">الميزات</a>
+          <a href="/#how" class="hover:text-emerald-700">كيف نعمل؟</a>
+          <a href="/privacy.html" class="hover:text-emerald-700 transition font-semibold text-slate-500">سياسة الخصوصية</a>
+          <a href="mailto:contact@chriki.com" class="hover:text-emerald-700">اتصل بنا</a>
+        </nav>
+      </div>
+      <div class="border-t border-slate-200/60 py-5 text-center text-xs text-slate-400">
+        © 2026 شريكي · Chriki — صنع بـ 💚 في الجزائر
+      </div>
+    </footer>
+
+    <!-- Search filter script -->
+    <script>
+      const searchInput = document.getElementById('searchInput');
+      const cards = document.querySelectorAll('.line-card');
+      const noResults = document.getElementById('noResults');
+
+      searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const searchContent = card.getAttribute('data-search').toLowerCase();
+          if (searchContent.includes(query)) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>
