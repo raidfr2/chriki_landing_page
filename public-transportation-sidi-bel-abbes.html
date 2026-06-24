@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خطوط النقل في سيدي بلعباس بالتفصيل | شريكي Chriki</title>
+    <meta name="description" content="البحث عن خطوط ومسارات حافلات النقل الحضري والعمومي في سيدي بلعباس بالتفصيل." />
+    <link rel="icon" type="image/png" href="/assets/appicon.png" />
+    <link rel="stylesheet" crossorigin href="/assets/Logo-C3tK9BT0.css">
+    
+    <!-- @Tailwind Play CDN compiled dynamically -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              slate: {
+                750: '#20293a',
+              }
+            },
+            fontFamily: {
+              raqami: ['"Raqami Regular"', 'Cairo', 'sans-serif'],
+              arabic: ['Cairo', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      body {
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+      .line-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .line-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.05), 0 10px 16px -6px rgba(15, 23, 42, 0.03);
+      }
+      .search-box:focus {
+        box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans antialiased text-slate-800">
+    
+    <!-- Top premium Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-100/80 bg-white/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="/" class="cursor-pointer focus:outline-none flex items-center gap-3">
+          <!-- Premium RTL Back arrow icon -->
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-emerald-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </div>
+          <span class="font-raqami font-extrabold text-2xl text-black">شريكي</span>
+        </a>
+        <a href="/#download" class="rounded-full bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 text-xs font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all font-arabic">
+          تحميل التطبيق
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto max-w-6xl px-5 py-12">
+      
+      <!-- Top Title & Badge section -->
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 border border-emerald-100/50 px-4 py-2 rounded-full font-arabic font-semibold">إصدار عاصمة المكرّة سيدي بلعباس</span>
+        <h1 class="mt-4 text-3xl font-black text-slate-900 sm:text-4xl font-arabic tracking-tight leading-tight">
+          كل خطوط النقل في سيدي بلعباس بالتفصيل
+        </h1>
+        <p class="mt-4 text-sm sm:text-base text-slate-500 leading-relaxed font-arabic">
+          تسهيلاً لتنقلكم اليومي في عاصمة المكرّة سيدي بلعباس، دليلك المنظم لجميع خطوط الترامواي والحافلات الحضرية على مستوى الولاية.
+        </p>
+
+        <!-- Dynamic Filter Input with Premium styling -->
+        <div class="mt-8 max-w-md mx-auto">
+          <div class="relative">
+            <input type="text" id="searchInput" placeholder="ابحث عن اسم حي، منطقة، أو رقم الخط..." class="w-full search-box px-5 py-4 pr-12 rounded-[1.5rem] border border-slate-200 bg-white text-sm text-slate-950 placeholder-slate-400 focus:outline-none focus:border-emerald-500 transition-all font-arabic text-right shadow-sm shadow-slate-100" />
+            <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="w-5 h-5 text-slate-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.603 10.602Z" />
+              </svg>
+            </div>
+          </div>
+          
+          <!-- Sample Searches Pills -->
+          <div class="flex flex-wrap gap-2.5 justify-center mt-4">
+            <span class="text-[11px] font-semibold text-slate-400 font-arabic pt-1 select-none">بحث سريع:</span>
+            <button onclick="quickSearch('المحطة رقم 17')" class="text-[11px] bg-slate-100/80 hover:bg-emerald-50 hover:text-emerald-700 font-semibold px-3 py-1 rounded-full text-slate-500 transition-colors font-arabic">المحطة رقم 17</button>
+            <button onclick="quickSearch('سيدي لحسن')" class="text-[11px] bg-slate-100/80 hover:bg-emerald-50 hover:text-emerald-700 font-semibold px-3 py-1 rounded-full text-slate-500 transition-colors font-arabic">سيدي لحسن</button>
+            <button onclick="quickSearch('تلموني الجديدة')" class="text-[11px] bg-slate-100/80 hover:bg-emerald-50 hover:text-emerald-700 font-semibold px-3 py-1 rounded-full text-slate-500 transition-colors font-arabic">تلموني الجديدة</button>
+            <button onclick="quickSearch('بلعربي')" class="text-[11px] bg-slate-100/80 hover:bg-emerald-50 hover:text-emerald-700 font-semibold px-3 py-1 rounded-full text-slate-500 transition-colors font-arabic">بلعربي</button>
+            <button onclick="quickSearch('سيدي حمادوش')" class="text-[11px] bg-slate-100/80 hover:bg-emerald-50 hover:text-emerald-700 font-semibold px-3 py-1 rounded-full text-slate-500 transition-colors font-arabic">سيدي حمادوش</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Match Lines Count Bar -->
+      <div id="countBar" class="hidden justify-between items-center mb-6 pb-2 border-b border-slate-100/50">
+        <div class="text-sm font-black text-slate-550 font-arabic flex items-center gap-1.5 bg-slate-100/50 rounded-xl px-4 py-1.5 text-slate-500">
+          <span>دليل خطوط الولاية:</span>
+          <span id="matchCount" class="text-slate-800 font-black">--</span>
+          <span>خط</span>
+        </div>
+      </div>
+
+      <!-- Bus Lines Cards Grid -->
+      <div id="linesGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4">
+        <!-- RENDERED BY JAVASCRIPT EXCLUSIVELY -->
+      </div>
+
+      <!-- Empty State / Comming Soon Page -->
+      <div id="wilayaEmptyState" class="text-center py-16 px-6 bg-white rounded-[2rem] border border-slate-200/50 shadow-sm shadow-slate-100/40 max-w-xl mx-auto mt-8 animate-fade-in">
+        <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mx-auto mb-6 text-emerald-600 shadow-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.967 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.967 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.967 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+          </svg>
+        </div>
+        <span class="text-xs font-bold bg-amber-50 border border-amber-100 text-amber-700 px-3.5 py-1.5 rounded-full font-arabic">ترقب التحديث القادم ⏳</span>
+        <h3 class="text-xl font-black text-slate-900 font-arabic mt-4">جاري جمع خطوط النقل لولاية سيدي بلعباس</h3>
+        <p class="text-slate-500 text-sm mt-3 leading-relaxed font-arabic max-w-sm mx-auto">
+          يقوم فريق ومجتمع **شريكي Chriki** بجمع ومراجعة شبكة النقل الحضري والعمومي لـ سيدي بلعباس لإضافتها بالتفصيل الدقيق والمسارات قريباً.
+        </p>
+        
+        <!-- Social Contribution Contact links inside the box -->
+        <div class="mt-8 bg-slate-50/80 border border-slate-100 rounded-2xl p-5 max-w-md mx-auto">
+          <p class="text-xs font-bold text-slate-500 font-arabic mb-3.5">تواصل معنا وأرسل خطوط ولايتك عبر:</p>
+          <div class="flex flex-wrap items-center justify-center gap-3.5">
+            <a href="mailto:chriki.inbox@gmail.com?subject=إضافة خطوط ولاية سيدي بلعباس" class="text-xs bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl font-arabic transition-all flex items-center gap-1.5 shadow-sm shadow-emerald-600/10">
+              <span>📩 البريد الإلكتروني</span>
+            </a>
+            <a href="https://web.telegram.org/k/#@chrikiapp" target="_blank" rel="noopener noreferrer" class="text-xs bg-sky-500 hover:bg-sky-600 text-white font-bold px-4 py-2.5 rounded-xl font-arabic transition-all flex items-center gap-1.5 shadow-sm shadow-sky-500/10">
+              <span>✈️ تيليجرام</span>
+            </a>
+            <a href="https://www.instagram.com/chrikiapp/" target="_blank" rel="noopener noreferrer" class="text-xs bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-95 text-white font-bold px-4 py-2.5 rounded-xl font-arabic transition-all flex items-center gap-1.5 shadow-sm">
+              <span>📸 انستغرام</span>
+            </a>
+          </div>
+          <p class="text-[10px] text-slate-450 font-semibold mt-3.5 font-arabic text-slate-400">يسعدنا استقبال صور المسارات، أرقام الخطوط، أو مخططات النقل الرسمية!</p>
+        </div>
+
+        <div class="mt-8">
+          <a href="/" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold px-8 py-3 rounded-xl font-arabic transition-all inline-flex items-center justify-center border border-slate-200/50">
+            العودة للرئيسية
+          </a>
+        </div>
+      </div>
+
+      <!-- No Results State (from search) -->
+      <div id="noResults" class="hidden text-center py-20 bg-white rounded-[2rem] border border-slate-100 shadow-sm mt-8 animate-fade-in">
+        <div class="w-14 h-14 bg-rose-50 rounded-full flex items-center justify-center mx-auto mb-4 text-rose-500">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 font-arabic">لا توجد نتائج بحث تطابق مدخلاتك</h3>
+        <p class="text-slate-400 text-sm mt-2 font-arabic max-w-xs mx-auto">جرب إدخال كلمات مفتاحية أخرى</p>
+        <button onclick="quickSearch('')" class="mt-4 text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold px-4 py-2 rounded-full font-arabic shadow-sm transition-all">إعادة تعيين البحث</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-100 bg-slate-50 mt-16">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-12 sm:flex-row">
+        <a href="/" class="cursor-pointer focus:outline-none flex items-center">
+          <span class="font-raqami font-extrabold text-2xl text-black">شريكي</span>
+        </a>
+        
+        <!-- Social & Contact Links Row -->
+        <div class="flex flex-wrap justify-center items-center gap-3.5 text-xs font-semibold font-arabic text-slate-500">
+          <a href="https://www.instagram.com/chrikiapp/" target="_blank" rel="noopener noreferrer" class="hover:text-rose-600 transition flex items-center gap-1 bg-white border border-slate-100/80 px-3 py-1.5 rounded-full shadow-sm">
+            <span>📸 انستغرام</span>
+          </a>
+          <a href="https://web.telegram.org/k/#@chrikiapp" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition flex items-center gap-1 bg-white border border-slate-100/80 px-3 py-1.5 rounded-full shadow-sm">
+            <span>✈️ تيليجرام</span>
+          </a>
+          <a href="mailto:chriki.inbox@gmail.com" class="hover:text-emerald-600 transition flex items-center gap-1 bg-white border border-slate-100/80 px-3.5 py-1.5 rounded-full shadow-sm">
+            <span>📩 chriki.inbox@gmail.com</span>
+          </a>
+        </div>
+
+        <nav class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500 font-arabic">
+          <a href="/#features" class="hover:text-emerald-700 transition">الميزات</a>
+          <a href="/#how" class="hover:text-emerald-700 transition">كيف نعمل؟</a>
+          <a href="/privacy.html" class="hover:text-emerald-700 transition font-semibold text-slate-500">سياسة الخصوصية</a>
+        </nav>
+      </div>
+      <div class="border-t border-slate-200/60 py-6 text-center text-xs text-slate-450 font-arabic text-slate-400">
+        © 2026 شريكي · Chriki — صنع بـ 💚 في الجزائر لترسيخ جودة النقل العام
+      </div>
+    </footer>
+
+    <!-- Comprehensive Routes Database & Core Interactive Engine -->
+    <script>
+      const colorsMap = {
+        red: {
+          topBorder: 'border-t-rose-500',
+          badgeBg: 'bg-rose-500',
+          timelineCircle: 'border-rose-500 text-rose-500',
+          timelineDot: 'bg-rose-500'
+        },
+        blue: {
+          topBorder: 'border-t-blue-500',
+          badgeBg: 'bg-blue-600',
+          timelineCircle: 'border-blue-600 text-blue-600',
+          timelineDot: 'bg-blue-600'
+        },
+        cyan: {
+          topBorder: 'border-t-cyan-500',
+          badgeBg: 'bg-cyan-500',
+          timelineCircle: 'border-cyan-500 text-cyan-500',
+          timelineDot: 'bg-cyan-500'
+        },
+        amber: {
+          topBorder: 'border-t-amber-500',
+          badgeBg: 'bg-amber-500',
+          timelineCircle: 'border-amber-500 text-amber-500',
+          timelineDot: 'bg-amber-500'
+        },
+        purple: {
+          topBorder: 'border-t-purple-600',
+          badgeBg: 'bg-purple-600',
+          timelineCircle: 'border-purple-600 text-purple-600',
+          timelineDot: 'bg-purple-600'
+        }
+      };
+
+      const routes = [
+        {
+          id: "L03B",
+          name: "الخط L03B: المحطة رقم 17 ⇄ حي 100 مسكن اجتماعي",
+          badge: "L03B",
+          type: "حافلة",
+          start: "المحطة رقم 17",
+          end: "حي 100 مسكن اجتماعي",
+          theme: "cyan",
+          stations: [
+            "المحطة رقم 17",
+            "مكتبة فياطي",
+            "كلية العلوم الدقيقة",
+            "كشك الحي العسكري",
+            "عمارة قندوزي",
+            "كلية عطار بلعباس",
+            "حي 2000 مسكن 1",
+            "حي 2000 مسكن 2",
+            "حي 1200 مسكن",
+            "حي 800 مسكن - طريق وطني تسالة",
+            "حي 100 مسكن اجتماعي"
+          ]
+        },
+        {
+          id: "L09",
+          name: "الخط L09: المحطة رقم 17 ⇄ حي الصخرة (الروشي)",
+          badge: "L09",
+          type: "حافلة",
+          start: "المحطة رقم 17",
+          end: "حي الصخرة",
+          theme: "blue",
+          stations: [
+            "المحطة رقم 17",
+            "محور دوران p'tit vichy",
+            "نقطة الضمان الاجتماعي",
+            "مكتبة موليير",
+            "OFLA - اوفلا",
+            "المذبح البلدي",
+            "مفترق الطرق حي بومليك",
+            "الحماية المدنية",
+            "الاقامة الجامعية",
+            "مفترق الطرق الشلالات",
+            "مقابل محطة العالمي",
+            "مفترق الطرق الروشي",
+            "حي الصخرة"
+          ]
+        },
+        {
+          id: "L11",
+          name: "الخط L11: محطة الأمير عبد القادر ⇄ سيدي لحسن",
+          badge: "L11",
+          type: "حافلة",
+          start: "محطة الأمير عبد القادر",
+          end: "حي 1000 مسكن",
+          theme: "amber",
+          stations: [
+            "محطة الأمير عبد القادر",
+            "نقطة برادو",
+            "محل الاجهزة الكهرومنزلية",
+            "شارع العقيد عثمان - عيادة شيالي",
+            "كلية الطب",
+            "مستشفى امراض السرطان",
+            "مديرية المصالح الفلاحية",
+            "المحطة البرية الساقية الحمراء",
+            "كلية العلوم الطبيعة والحياة",
+            "مزرعة la sap",
+            "محور الدوران مقهى 05 جويلية",
+            "بلدية سيدي لحسن - الجسر",
+            "بلدية سيدي لحسن - المسجد",
+            "بلدية سيدي لحسن - مقر الدائرة",
+            "بلدية سيدي لحسن - محطة سيارات الاجرة",
+            "المحطة النهائية - حي 1000 مسكن"
+          ]
+        },
+        {
+          id: "L16",
+          name: "الخط L16: المحطة رقم 17 ⇄ حي بن حمودة",
+          badge: "L16",
+          type: "حافلة",
+          start: "المحطة رقم 17",
+          end: "مقابل بريد بن حمودة",
+          theme: "purple",
+          stations: [
+            "المحطة رقم 17",
+            "محور دوران p'tit vichy",
+            "عيادة الولادة",
+            "محل الاثاث",
+            "حي السوريكور - العصافير",
+            "حي السوريكور - كشك",
+            "حي السوريكور - الملعب",
+            "حي السوريكور - المسجد",
+            "ثانوية دار عبيد",
+            "مفترق الطرق حي بومليك",
+            "الحماية المدنية",
+            "الاقامة الجامعية",
+            "مفترق الطرق الشلالات",
+            "مقابل محطة العالمي",
+            "مفترق الطرق الروشي",
+            "حي 300 مسكن",
+            "مقابل بريد بن حمودة"
+          ]
+        },
+        {
+          id: "L25",
+          name: "الخط L25: محطة الأمير عبد القادر ⇄ تلموني الجديدة",
+          badge: "L25",
+          type: "حافلة",
+          start: "محطة الأمير عبد القادر",
+          end: "تلموني الجديدة الموقف 2",
+          theme: "red",
+          stations: [
+            "محطة الأمير عبد القادر",
+            "نقطة برادو",
+            "شارع محمد خمستي - ثانوية النجاح",
+            "حظيرة البلدية",
+            "المجلس القضائي",
+            "فندق بني تالة",
+            "حي عدل 1500 مسكن",
+            "المنطقة الصناعية",
+            "موقف الزعاووقة",
+            "مفترق الطرق الحماية المدنية",
+            "تلموني الجديدة الموقف 1",
+            "تلموني الجديدة الموقف 2"
+          ]
+        },
+        {
+          id: "L26",
+          name: "الخط L26: محطة الأمير عبد القادر ⇄ بلعربي",
+          badge: "L26",
+          type: "حافلة",
+          start: "محطة الأمير عبد القادر",
+          end: "بلدية بلعربي - نقطة النهاية",
+          theme: "cyan",
+          stations: [
+            "محطة الأمير عبد القادر",
+            "نقطة برادو",
+            "شارع محمد خمستي - ثانوية النجاح",
+            "حظيرة البلدية",
+            "المجلس القضائي",
+            "فندق بني تالة",
+            "حي عدل 1500 مسكن",
+            "المنطقة الصناعية",
+            "موقف الزعاووقة",
+            "بلدية تلموني 1",
+            "بلدية تلموني 2",
+            "بلدية تلموني 3",
+            "مزرعة زيدان",
+            "مزرعة خباز",
+            "مزرعة العريش",
+            "مفترق 04 طرق",
+            "بلدية بلعربي - المدرسة",
+            "بلدية بلعربي - المقهى",
+            "بلدية بلعربي - نقطة النهاية"
+          ]
+        },
+        {
+          id: "L27",
+          name: "الخط L27: محطة الأمير عبد القادر ⇄ البواعیش",
+          badge: "L27",
+          type: "حافلة",
+          start: "محطة الأمير عبد القادر",
+          end: "قرية البواعیش",
+          theme: "blue",
+          stations: [
+            "محطة الأمير عبد القادر",
+            "نقطة برادو",
+            "شارع محمد خمستي - ثانوية النجاح",
+            "حظيرة البلدية",
+            "حي الحرية 1",
+            "حي الحرية 2",
+            "بلدية العمارنة",
+            "طريق تنيرة - المقبرة",
+            "الزيتون",
+            "ملتقى طريق تنيرة - البواعیش",
+            "قرية البواعیش"
+          ]
+        },
+        {
+          id: "L28",
+          name: "الخط L28: محطة الأمير عبد القادر ⇄ سيدي حمادوش",
+          badge: "L28",
+          type: "حافلة",
+          start: "محطة الأمير عبد القادر",
+          end: "بلدية سيدي حمادوش - النهاية",
+          theme: "amber",
+          stations: [
+            "محطة الأمير عبد القادر",
+            "كلية الاعلام الالي",
+            "مديرية مسح الاراضي",
+            "البنك الوطني الجزائري - الروتي",
+            "محطة العالمي",
+            "نقطة النخيل",
+            "نقطة الحي الامريكي",
+            "مزرعة بن تركي",
+            "مدخل سيدي براهيم - حي تونسي",
+            "نقطة ادارة السجون",
+            "سيدي براهيم وسط",
+            "موقف البلدية",
+            "موقف الدرك الوطني",
+            "مفترق طرق - زروالة",
+            "مدخل سيدي حمادوش - بوبرناس",
+            "بلدية سيدي حمادوش",
+            "بلدية سيدي حمادوش 2",
+            "بلدية سيدي حمادوش 3",
+            "بلدية سيدي حمادوش - النهاية"
+          ]
+        }
+      ];
+
+      let expandedCardsState = {};
+
+      const linesGrid = document.getElementById('linesGrid');
+      const searchInput = document.getElementById('searchInput');
+      const matchCountSpan = document.getElementById('matchCount');
+      const noResultsDiv = document.getElementById('noResults');
+      const emptyStateDiv = document.getElementById('wilayaEmptyState');
+      const countBar = document.getElementById('countBar');
+
+      function renderCards(filterQuery = "") {
+        linesGrid.innerHTML = "";
+        
+        if (routes.length === 0) {
+          emptyStateDiv.classList.remove('hidden');
+          countBar.classList.add('hidden');
+          linesGrid.classList.add('hidden');
+          return;
+        } else {
+          emptyStateDiv.classList.add('hidden');
+        }
+
+        const query = filterQuery.trim().toLowerCase();
+        
+        let matchingRoutes = routes.filter(route => {
+          const searchString = [
+            route.name,
+            route.badge,
+            route.type,
+            route.start,
+            route.end,
+            ...(route.note ? [route.note] : []),
+            ...route.stations
+          ].join(" ").toLowerCase();
+          
+          return searchString.includes(query);
+        });
+
+        matchCountSpan.innerText = matchingRoutes.length;
+        countBar.classList.remove('hidden');
+
+        if (matchingRoutes.length === 0) {
+          noResultsDiv.classList.remove('hidden');
+          linesGrid.classList.add('hidden');
+          return;
+        } else {
+          noResultsDiv.classList.add('hidden');
+          linesGrid.classList.remove('hidden');
+        }
+
+        matchingRoutes.forEach(route => {
+          const theme = colorsMap[route.theme] || colorsMap.blue;
+          const cardId = route.id;
+          const isExpanded = expandedCardsState[cardId] || false;
+          
+          const stations = route.stations;
+          const maxVisible = 4;
+          const showsExpandButton = stations.length > maxVisible;
+          
+          let visibleStationsList = isExpanded ? stations : stations.slice(0, maxVisible);
+          
+          const stationsHtml = visibleStationsList.map((station, index) => {
+            const isFirst = index === 0;
+            if (isFirst) {
+              return `
+                <div class="flex items-center gap-3.5 relative py-0.5">
+                  <div class="w-5 h-5 rounded-full border-4 \${theme.timelineCircle} bg-white z-10 flex items-center justify-center shadow-sm">
+                    <div class="w-1.5 h-1.5 rounded-full \${theme.timelineDot}"></div>
+                  </div>
+                  <span class="text-sm font-black text-slate-800 font-arabic leading-tight">\${station}</span>
+                </div>
+              `;
+            } else {
+              return `
+                <div class="flex items-center gap-3.5 relative py-0.5">
+                  <div class="w-5 flex justify-center items-center z-10">
+                    <div class="w-2.5 h-2.5 rounded-full bg-slate-300 ring-4 ring-white"></div>
+                  </div>
+                  <span class="text-sm text-slate-600 font-semibold font-arabic leading-relaxed">\${station}</span>
+                </div>
+              `;
+            }
+          }).join("");
+
+          let expandBtnHtml = "";
+          if (showsExpandButton) {
+            if (isExpanded) {
+              expandBtnHtml = `
+                <button onclick="toggleCard('\${cardId}')" class="flex items-center gap-1.5 text-xs text-blue-600 hover:text-blue-800 font-bold mt-3.5 pr-8 focus:outline-none transition-all font-arabic">
+                  <span>عرض أقل</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                  </svg>
+                </button>
+              `;
+            } else {
+              const hiddenCount = stations.length;
+              expandBtnHtml = `
+                <button onclick="toggleCard('\${cardId}')" class="flex items-center gap-1.5 text-xs text-blue-600 hover:text-blue-800 font-bold mt-3.5 pr-8 focus:outline-none transition-all font-arabic">
+                  <span>عرض جميع المحطات (\${hiddenCount})</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+              `;
+            }
+          }
+
+          let noteHtml = "";
+          if (route.note) {
+            noteHtml = `
+              <div class="bg-slate-50/80 border border-slate-100/60 rounded-xl p-2.5 mt-4 text-[11px] text-slate-500 font-semibold leading-relaxed font-arabic">
+                💡 \${route.note}
+              </div>
+            `;
+          }
+
+          const cardHtml = `
+            <div class="line-card bg-white rounded-[2rem] border border-slate-200/50 shadow-sm shadow-slate-100/30 \${theme.topBorder} border-t-[8px] p-6 pb-5 flex flex-col justify-between" id="card-\${cardId}">
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-5">
+                  <div class="flex-1 text-right">
+                    <h3 class="text-base sm:text-[17px] font-black text-slate-900 font-arabic leading-tight">\${route.name}</h3>
+                    <div class="flex items-center gap-2 mt-1.5 text-xs text-slate-400 font-semibold font-arabic">
+                      <span>\${stations.length} محطة</span>
+                      <span class="border border-slate-200/80 px-2 py-0.5 rounded-lg text-[10px] font-bold bg-slate-50 text-slate-500">\${route.type}</span>
+                    </div>
+                  </div>
+                  <div class="w-14 h-14 rounded-2xl \${theme.badgeBg} text-white flex flex-col items-center justify-center font-black shadow-md flex-shrink-0">
+                    <span class="text-[9px] font-bold opacity-80 tracking-wider leading-none mb-1">\${route.type}</span>
+                    <span class="text-base leading-none">\${route.badge}</span>
+                  </div>
+                </div>
+
+                <div class="relative flex flex-col gap-3 mr-1 pr-1 pl-1">
+                  <div class="absolute right-[9px] top-[14px] bottom-[14px] w-[2px] bg-slate-100"></div>
+                  \${stationsHtml}
+                </div>
+
+                \${expandBtnHtml}
+                \${noteHtml}
+              </div>
+
+              <div class="border-t border-slate-100/80 mt-5 pt-3.5 flex items-center gap-2 text-xs text-slate-400 font-semibold justify-start font-arabic">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-slate-400 flex-shrink-0">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                <span class="truncate">\${route.start} ← \${route.end}</span>
+              </div>
+            </div>
+          `;
+          
+          linesGrid.insertAdjacentHTML('beforeend', cardHtml);
+        });
+      }
+
+      function toggleCard(cardId) {
+        expandedCardsState[cardId] = !expandedCardsState[cardId];
+        renderCards(searchInput.value);
+      }
+
+      function quickSearch(tag) {
+        searchInput.value = tag;
+        renderCards(tag);
+        searchInput.focus();
+      }
+
+      searchInput.addEventListener('input', function() {
+        renderCards(this.value);
+      });
+
+      renderCards("");
+    </script>
+  </body>
+</html>
